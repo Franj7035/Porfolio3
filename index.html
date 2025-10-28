@@ -9,7 +9,7 @@
         body {
             background-color: #121212;
             color: #e0e0e0;
-            font-family: 'Arial', sans-serif;
+            font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
         }
@@ -27,9 +27,9 @@
         }
 
         nav ul {
-            list-style-type: none;
+            list-style: none;
+            margin: 10px 0 0 0;
             padding: 0;
-            margin-top: 10px;
         }
 
         nav ul li {
@@ -41,7 +41,7 @@
             color: #bb86fc;
             text-decoration: none;
             font-size: 18px;
-            transition: color 0.3s ease-in-out;
+            transition: color 0.2s ease-in-out;
         }
 
         nav ul li a:hover {
@@ -50,7 +50,7 @@
 
         /* Parallax Background */
         .parallax {
-            background-image: url('MulticoloredBack.jpg'); /* Replace with your background image */
+            background-image: url('MulticoloredBack.jpg');
             height: 100vh;
             background-attachment: fixed;
             background-position: center;
@@ -68,19 +68,19 @@
             color: white;
             font-size: 36px;
             font-weight: bold;
-            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Adds a subtle shadow for visibility */
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
         }
 
         /* Hero Section */
+        main { padding-top: 120px; } /* ensure content not hidden behind fixed header */
+
         #hero {
             text-align: center;
-            padding: 50px 20px;
             display: flex;
             flex-direction: column;
             align-items: center;
-            background-color: rgba(0, 0, 0, 0.8); /* Adds contrast after parallax */
-            margin-top: -100px; /* Blends into the background smoothly */
-            padding-top: 100px;
+            background-color: rgba(0, 0, 0, 0.6);
+            padding: 50px 20px;
         }
 
         .content {
@@ -91,11 +91,13 @@
         .content h2 {
             font-size: 32px;
             color: #bb86fc;
+            margin: 0 0 10px 0;
         }
 
         .content p {
             font-size: 18px;
             line-height: 1.6;
+            margin: 0;
         }
 
         .image-container img {
@@ -104,7 +106,7 @@
             border-radius: 10px;
             margin-top: 20px;
             border: 3px solid #bb86fc;
-            transition: transform 0.3s ease-in-out;
+            transition: transform 0.25s ease-in-out;
         }
 
         .image-container img:hover {
@@ -125,6 +127,7 @@
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
+                <li><a href="sip.html">SIP</a></li>
                 <li><a href="boards.html">Boards</a></li>
                 <li><a href="projects.html">Projects</a></li>
                 <li><a href="contact.html">Contact</a></li>
@@ -144,9 +147,9 @@
             <div class="content">
                 <h2>Welcome to My Portfolio</h2>
                 <p>
-                    My name is Francisco Jair Hernandez Sanchez, and I am currently pursuing a degree in Advertising Arts at UAT. 
-                    I am passionate about web design and programming, and I am dedicated to improving my skills in both areas. 
-                    This website serves as a foundation for my portfolio, showcasing my projects and experience.
+                    My name is Francisco Jair Hernandez Sanchez, and I am currently pursuing a degree in Advertising Arts at UAT.
+                    I am passionate about web design and programming and am dedicated to improving my skills in both areas.
+                    This website showcases my projects and experience.
                 </p>
             </div>
             <div class="image-container">
